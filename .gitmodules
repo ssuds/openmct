@@ -1,0 +1,3 @@
+[submodule "illini-motorsports-telemetry"]
+	path = illini-motorsports-telemetry
+	url = https://github.com/ssuds/illini-motorsports-telemetry.git

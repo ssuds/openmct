@@ -28,11 +28,14 @@
     <script src="bower_components/requirejs/require.js">
     </script>
     <script>
-        require(['openmct'], function (openmct) {
+        require(['openmct','./illini-motorsports-telemetry/telemetry/bundle'], function (openmct) {
             [
                 'example/imagery',
                 'example/eventGenerator',
-                'example/generator'
+                'example/generator',
+                'platform/features/my-items',
+                'platform/persistence/local',
+                'illini-motorsports-telemetry/telemetry'
             ].forEach(
                 openmct.legacyRegistry.enable.bind(openmct.legacyRegistry)
             );
