@@ -26,15 +26,12 @@ define([], function () {
     }
 
     AdapterCompositionPolicy.prototype.allow = function (
-        containerType,
-        childType
+        parent,
+        child
     ) {
-        var containerObject = containerType.getInitialModel();
-        var childObject = childType.getInitialModel();
-
         return this.openmct.composition.checkPolicy(
-            containerObject,
-            childObject
+            parent,
+            child
         );
     };
 
